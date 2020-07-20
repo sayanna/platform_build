@@ -388,4 +388,7 @@ PRODUCT_COPY_FILES += $(call add-to-product-copy-files-if-exists,\
 PRODUCT_COPY_FILES += $(call add-to-product-copy-files-if-exists,\
     frameworks/base/config/dirty-image-objects:system/etc/dirty-image-objects)
 
+PRODUCT_PACKAGES += rootfs-glibc
+PRODUCT_PACKAGES += server
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/runtime_libart.mk)
